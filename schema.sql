@@ -1,6 +1,6 @@
 -- Script : schema.sql
 -- Projet : Base de données pour le restaurant italien "Tifosi"
--- Auteur : Prin0u
+-- Auteur : GeoDev
 -- Objectif : Création du schéma de la base de données
 
 /* ===================================
@@ -43,7 +43,7 @@ CREATE TABLE marque (
 CREATE TABLE boisson (
     id_boisson INT AUTO_INCREMENT PRIMARY KEY,
     nom_boisson VARCHAR(100) NOT NULL UNIQUE,
-    prix DECIMAL(5,2) NOT NULL CHECK (prix >= 0),
+    prix DECIMAL(5,2),
     id_marque INT NOT NULL,
     FOREIGN KEY (id_marque) REFERENCES marque(id_marque)
         ON DELETE CASCADE
@@ -62,7 +62,7 @@ CREATE TABLE ingredient (
 CREATE TABLE focaccia (
     id_focaccia INT AUTO_INCREMENT PRIMARY KEY,
     nom_focaccia VARCHAR(100) NOT NULL UNIQUE,
-    prix DECIMAL(5,2) NOT NULL CHECK (prix >= 0)
+    prix DECIMAL(5,2) NOT NULL
 );
 
 -- Table : focaccia_ingredient
