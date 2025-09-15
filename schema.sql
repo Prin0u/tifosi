@@ -70,6 +70,7 @@ CREATE TABLE focaccia (
 CREATE TABLE focaccia_ingredient (
     id_focaccia INT NOT NULL,
     id_ingredient INT NOT NULL,
+    quantite_grammes DECIMAL(5,2),
     PRIMARY KEY (id_focaccia, id_ingredient),
     FOREIGN KEY (id_focaccia) REFERENCES focaccia(id_focaccia)
         ON DELETE CASCADE
