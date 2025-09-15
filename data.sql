@@ -1,6 +1,6 @@
 -- Script : data.sql
 -- Projet : Base de données pour le restaurant italien "Tifosi"
--- Auteur : Prin0u
+-- Auteur : GeoDev
 -- Objectif : Peupler la base de données avec des données de test
 
 USE tifosi;
@@ -80,7 +80,7 @@ INSERT INTO focaccia (nom_focaccia, prix) VALUES
 -- Table : focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
 
 -- Mozaccia : Base tomate, Mozarella, cresson, jambon fumé, ail, artichaut, champignon, parmesan, poivre, olive noire
-INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes) VALUES
 (1, 5, 200),
 (1, 25, 50),
 (1, 9, 20),
@@ -93,7 +93,7 @@ INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
 (1, 16, 20);
 
 -- Gorgonzollaccia : Base tomate, gorgozonla, cresson, ail, champignon, parmesan, poivre, olive noire
-INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes) VALUES
 (2, 5, 200),
 (2, 11, 50),
 (2, 9, 20),
@@ -104,7 +104,7 @@ INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
 (2, 16, 20);
 
 -- Raclaccia : Base tomate, raclette, cresson, ail, champignon, parmesan, poivre
-INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes) VALUES
 (3, 5, 200),
 (3, 22, 50),
 (3, 9, 20),
@@ -114,7 +114,7 @@ INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
 (3, 20, 1);
 
 -- Emmentalaccia : Base crème, emmental, cresson, champignon, parmesan, poivre, oignon
-INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes) VALUES
 (4, 6, 200),
 (4, 10, 50),
 (4, 9, 20),
@@ -124,7 +124,7 @@ INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
 (4, 15, 20);
 
 -- Tradizione : Base tomate, mozarella, cresson, jambon cuit, champignon, parmesan, poivre, olive noire, olive verte
-INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes) VALUES
 (5, 5, 200),
 (5, 25, 50),
 (5, 9, 20),
@@ -136,7 +136,7 @@ INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
 (5, 17, 10);
 
 -- Hawaienne : Base tomate, mozarella, cresson, bacon, ananas, piment, parmesan, poivre, olive noire
-INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes) VALUES
 (6, 5, 200),
 (6, 25, 50),
 (6, 9, 20),
@@ -148,7 +148,7 @@ INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
 (6, 16, 20);
 
 -- Américaine : Base tomate, mozarella, cresson, bacon, pomme de terre, parmesan, poivre, olive noire
-INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes) VALUES
 (7, 5, 200),
 (7, 25, 50),
 (7, 9, 20),
@@ -158,7 +158,7 @@ INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
 (7, 16, 20);
 
 -- Paysanne : Base crème, chèvre, cresson, pomme de terre, jambon fumé, ail, artichaut, champignon, parmesan, poivre, olive noire, oeuf
-INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes)
+INSERT INTO focaccia_ingredient (id_focaccia, id_ingredient, quantite_grammes) VALUES
 (8, 6, 200),
 (8, 8, 50),
 (8, 9, 20),
